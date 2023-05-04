@@ -37,9 +37,14 @@ public class Simplex_rcv extends Base_Protocol implements Callbacks {
      */
     @Override
     public void from_physical_layer(long time, Frame frame) {
-        if(frame.kind() == Frame.ACK_FRAME) {
-            Frame frameack = Frame.new_Ack_Frame(frame_expected, frame_expected);
-            
+        if(frame.kind() == Frame.DATA_FRAME) {
+            Frame frameAck = Frame.new_Ack_Frame(frame.seq(), frame_expected);
+            sim.to_physical_layer(frameAck, false);
+            if(frame.seq() == frame_expected){
+                if(net.to_network_layer(frame.info())){
+                    frame_expected = next_seq(frame_expected);
+                }
+            }
             // Enviar de volta para o physical layer e acabar a discriminação de frame types.
         }
     }
