@@ -45,6 +45,7 @@ public class Simplex_rcv extends Base_Protocol implements Callbacks {
                     frame_expected = next_seq(frame_expected);
                 }
             }
+        
             // Enviar de volta para o physical layer e acabar a discriminação de frame types.
         }
     }

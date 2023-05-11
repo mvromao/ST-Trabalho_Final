@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/simulator/DataFrameIF.java</file>
             <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/protocol/Utopian_rcv.java</file>
             <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/protocol/Simplex_snd.java</file>
-            <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/simulator/AckFrameIF.java</file>
-            <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/protocol/Base_Protocol.java</file>
             <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/protocol/Utopian_snd.java</file>
+            <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/simulator/Frame.java</file>
             <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/protocol/Simplex_rcv.java</file>
-            <file>file:/home/renedito/Desktop/ST_lab5_students/lab5_alunos/protocol/src/terminal/Terminal.java</file>
         </group>
     </open-files>
 </project-private>

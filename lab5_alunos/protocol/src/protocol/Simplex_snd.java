@@ -90,10 +90,10 @@ public class Simplex_snd extends Base_Protocol implements Callbacks {
      */
     @Override
     public void from_physical_layer(long time, Frame frame) {
-        sim.Log("from_physical_layer not implemented\n"); 
         if (frame.kind() == Frame.ACK_FRAME) {
             AckFrameIF aframe= frame;  // Auxiliary variable to access the Ack frame fields.
-            // ...
+            if (aframe.ack() == prev_seq(next_frame_to_send))
+                sim.cancel_data_timer(prev_seq(next_frame_to_send));
         }
     }
 
